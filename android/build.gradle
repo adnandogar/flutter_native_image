@@ -25,6 +25,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 33
+    namespace "com.example.flutternativeimage"
 
     defaultConfig {
         minSdkVersion 23

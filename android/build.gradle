@@ -2,13 +2,15 @@ group 'com.example.flutternativeimage'
 version '1.0-SNAPSHOT'
 
 buildscript {
+    ext.kotlin_version = '1.9.10'
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
 
@@ -22,10 +24,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 23
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
